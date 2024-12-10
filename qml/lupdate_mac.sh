@@ -1,4 +1,4 @@
-LUPDATE=/Users/yuxin/Qt/5.15.2/clang_64/bin/lupdate
+LUPDATE=~/Qt/5.15.2/clang_64/bin/lupdate
 
 LST=
 

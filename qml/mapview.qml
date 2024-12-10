@@ -1314,7 +1314,7 @@ Item {
         //columnHeads.visible=true;
         columnCounter.visible=true;
         //根据 https://doc.qt.io/qt-5/qtqml-javascript-dynamicobjectcreation.html 的文档，创建是有可能直接就完成的
-        var compHead=Qt.createComponent("https://lxfly2000.github.io/eewcn-res/qml/rectanglehead.qml",Component.Asynchronous);
+        var compHead=Qt.createComponent("https://OpenEEWCN.github.io/eewcn-res/qml/rectanglehead.qml",Component.Asynchronous);
         if(compHead.status===Component.Ready){
             var oHead=compHead.createObject(columnHeads);
             oHead.setFontFamily(textEEWTime.font.family);
@@ -1326,7 +1326,7 @@ Item {
                 }
             });
         }
-        var compCounter=Qt.createComponent("https://lxfly2000.github.io/eewcn-res/qml/rowcounter.qml",Component.Asynchronous);
+        var compCounter=Qt.createComponent("https://OpenEEWCN.github.io/eewcn-res/qml/rowcounter.qml",Component.Asynchronous);
         if(compCounter.status===Component.Ready){
             var oCounter=compCounter.createObject(columnListCounters);
             oCounter.setFontFamily(textEEWTime.font.family);
